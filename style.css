@@ -1,0 +1,47 @@
+body { margin: 0; padding: 0; zoom: 1; }
+h1, h2, p { margin: 0; padding: 0; }
+p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+
+.strike { text-decoration: line-through; }
+
+
+.opentype {
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+.legibility {
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.section-text { position: absolute; pointer-events: none; top: 50%; left:50%;transform: translate(-50%, -50%);}
+.section-text .container {  text-align: center; }
+.section-text h2 { position:relative; font: 70px/70px 'Unica One', sans-serif; z-index:1; text-transform: uppercase; text-align: center; color: #bd2929; margin: 10px 0px 0px; }
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
